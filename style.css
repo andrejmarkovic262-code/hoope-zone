@@ -1,0 +1,541 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #10100e;
+}
+
+main {
+    flex: 1;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #10100e;
+    border-bottom: 3px solid #1a1a1a;;
+}
+
+header nav img{
+    width: 140px;
+    height: auto;
+    display: block;
+}
+
+header nav .menu ul li{
+    display: inline-block;
+    padding: 15px;
+    margin: 15px;
+}
+
+header nav .menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    transition: .5s;
+}
+
+header nav .menu ul li a:hover{
+    color: #e65100;
+}
+
+header nav .menu ul li .aktivan{
+    color: #ff6b00;
+}
+
+header nav .menu ul li .zip-fajl{
+    border: 2px solid #e65100;
+    padding: 15px;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+header nav .menu ul li .zip-fajl:hover{
+    background-color: #e65100;
+    color: #ffffff;
+}
+
+main .hero{
+    background-image: url(slike/hero-section.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    padding-top: 110px;
+    display: flex;
+    align-items: center;
+    padding-left: 140px;
+    padding-bottom: 350px;
+}
+
+main .hero .glavno h1{
+    font-size: 100px;
+    color: #ffffff;
+    line-height: 0.9;
+    padding-bottom: 25px;
+}
+
+main .hero .glavno h1 span{
+    color: #ff6b00;
+}
+
+main .hero .glavno p{
+    color: #aaaaaa;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+main .hero .glavno a{
+    color: #ffffff;
+    background-color: #ff6b00;
+    font-size: 20px;
+    border: none;
+    padding: 2% 4%;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+main .hero .glavno a:hover{
+    background-color: #e65100;
+}
+
+main .o-nama{
+    background-color: #10100e;
+    padding-top: 45px;
+    display: flex;
+    padding-left: 45px;
+    padding-bottom: 65px;
+}
+
+main .o-nama .novosti{
+    margin-right: 45px;
+    width: 40%;
+}
+
+main .o-nama .novosti .naslov{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .o-nama .novosti .naslov p{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+main .o-nama .novosti .naslov a{
+    padding: 15px;
+    font-size: 15px;
+    color: #aaaaaa;
+    transition: .5s ease;
+}
+
+main .o-nama .novosti .naslov a:hover{
+    color: #e65100;
+}
+
+main .o-nama .novosti .vesti .vest{
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    border-radius: 45px;
+}
+
+main .o-nama .novosti .vesti .vest img{
+    width: 15%;
+    height: auto;
+    margin-right: 15px;
+}
+
+main .o-nama .novosti .vesti .vest a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: .5s ease;
+    margin-top: 1%;
+}
+
+main .o-nama .novosti .vesti .vest a:hover{
+    color: #e65100;
+}
+
+main .o-nama .hoop-zone{
+    margin-right: 45px;
+    border: 3px solid #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    padding-top: 25px;
+    -webkit-box-shadow: 0px 0px 31px 8px #000000; 
+    box-shadow: 0px 0px 31px 8px #000000;
+}
+
+main .o-nama .hoop-zone img{
+    width: 70%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+main .o-nama .hoop-zone .naslov{
+    color: #ff6b00;
+}
+
+main .o-nama .hoop-zone h1{
+    color: #ffffff;
+}
+
+main .o-nama .hoop-zone p{
+    color: #aaaaaa;
+}
+
+main .o-nama .takmicenja{
+    margin-right: 45px;
+}
+
+main .o-nama .takmicenja h1{
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+main .o-nama .takmicenja .takmicenje{
+    background-color: #1a1a1a;
+    margin-bottom: 10px;
+    display: flex;
+    border-radius: 45px;
+}
+
+main .o-nama .takmicenja .takmicenje img{
+    width: 10%;
+    height: auto;
+    margin-right: 15px;
+}
+
+main .o-nama .takmicenja .takmicenje a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.5s;
+    margin-top: 1%;
+}
+
+main .o-nama .takmicenja .takmicenje a:hover{
+    color: #e65100;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #10100e;
+    border-top: 2px solid #1a1a1a;
+}
+
+footer img{
+    width: 140px;
+    height: auto;
+    display: block;
+}
+
+footer .brzi-linkovi{
+    padding-top: 1%;
+}
+
+footer .brzi-linkovi ul li{
+    display: inline-block;
+    padding: 0 15px;
+    margin: 15px;
+}
+
+footer .brzi-linkovi ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #aaaaaa;
+    transition: .5s;
+}
+
+footer .brzi-linkovi ul li a:hover{
+    color: #e65100;
+}
+
+
+/*VESTI.html*/
+
+main .glavne-vesti{
+    background-color: #10100e;
+    padding-top: 45px;
+}
+
+main .glavne-vesti .naslov{
+    background-color: #1a1a1a;
+    -webkit-box-shadow: 0px 0px 31px 8px #ff6b00; 
+    box-shadow: 0px 0px 31px 8px #ff6b00;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+main .glavne-vesti .naslov p{
+    font-size: 50px;
+    color: #ffffff;
+}
+
+main .glavne-vesti .vesti{
+    display: flex;
+    margin-top: 100px;
+    padding-bottom: 45px;
+}
+
+main .glavne-vesti .vesti .vest{
+    display: flex;
+    background-color: #1a1a1a;
+    -webkit-box-shadow: 0px 0px 31px 8px #000000; 
+    box-shadow: 0px 0px 31px 8px #000000;
+    margin-left: 195px;
+    margin-right: 195px;
+    border-radius: 25px;
+    width: 100%;
+    transition: .5s ease;
+}
+
+main .glavne-vesti .vesti .vest:hover{
+    -webkit-box-shadow: 0px 0px 31px 8px #ff6b00; 
+    box-shadow: 0px 0px 31px 8px #ff6b00;
+}
+
+main .glavne-vesti .vesti .vest img{
+    width: 300px;
+    height: auto;
+}
+
+main .glavne-vesti .vesti .vest .opis{
+    padding-left: 25px;
+    color: #ffffff;
+}
+
+main .glavne-vesti .vesti .vest .opis p{
+    color: #aaaaaa;
+    margin-bottom: 25px;
+}
+
+main .glavne-vesti .vesti .vest .opis a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+main .glavne-vesti .vesti .vest .opis a:hover{
+    color: #e65100;
+    border-color: #e65100;
+}
+
+/* TAKMICENJA.html */
+
+main .ekipe{
+    display: flex;
+    background-color: #10100e;
+    padding: 45px;
+    padding: 65px;
+}
+
+main .ekipe a{
+    display: flex;
+    justify-content: center;
+    cursor: context-menu;
+}
+
+main .ekipe a img{
+    -webkit-box-shadow: 0px 0px 31px 8px #000000; 
+    box-shadow: 0px 0px 31px 8px #000000;
+    width: 60%;
+    height: auto;
+    transition: .5s;
+    cursor: pointer;
+}
+
+main .ekipe a img:hover{
+    -webkit-box-shadow: 0px 0px 31px 8px #ff6b00; 
+    box-shadow: 0px 0px 31px 8px #ff6b00;
+}
+
+/* EKIPE */
+
+.ekipe table{
+    width: 50%;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 75px;
+    border: 1px solid black;
+    -webkit-box-shadow: 0px 0px 31px 8px #ff6b00; 
+    box-shadow: 0px 0px 31px 8px #ff6b00;
+    color: #ffffff;
+    background-color: #1a1a1a;
+}
+
+.ekipe table tr td, th{
+    padding: 15px;
+}
+
+.ekipe table tr td, th{
+    border: 1px solid black;
+}
+
+/* O KOSARCI */
+
+.o-kosarci{
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.o-kosarci .istorija{
+    margin: 45px;
+}
+
+.o-kosarci .istorija h1{
+    color: #ff6b00;
+    text-transform: uppercase;
+}
+
+.o-kosarci .istorija .flex{
+    display: flex;
+    margin-top: 25px;
+    color: white;
+}
+
+.o-kosarci .istorija .flex img{
+    width: 30%;
+    margin-right: 25px;
+    border: 1px solid #e65100;
+    border-radius: 25px;
+}
+
+.o-kosarci .istorija .flex .opis p{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.o-kosarci .ljubav{
+    margin: 45px;
+}
+
+.o-kosarci .ljubav h1{
+    color: #ff6b00;
+    text-transform: uppercase;
+}
+
+.o-kosarci .ljubav .flex .red{
+    display: flex;
+    margin-top: 25px;
+    color: white;
+}
+
+.o-kosarci .flex .prvi .levi, .desni{
+    width: 70%;
+    display: flex;
+    border: 3px solid #e65100;
+    padding: 25px 30px;
+    margin-right: 20px;
+}
+
+.o-kosarci .flex .prvi .levi i, .desni i{
+    color: #ff6b00;
+    font-size: 50px;
+    margin-right: 25px;
+}
+
+.o-kosarci .flex .drugi .levi, .desni{
+    width: 70%;
+    display: flex;
+    border: 3px solid #e65100;
+    padding: 25px 30px;
+    margin-right: 20px;
+}
+
+.o-kosarci .flex .drugi .levi i, .desni i{
+    color: #ff6b00;
+    font-size: 50px;
+    margin-right: 25px;
+}
+
+.o-kosarci .citat{
+    display: flex;
+}
+
+.citat{
+    background-image: url(slike/hero-section.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    margin: 80px auto;
+    border: 1px solid #e65100;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    border-radius: 25px;
+    height: 250px;
+}
+
+.citat .naslov{
+    display: flex;
+    color: white;
+    padding: 45px;
+}
+
+.citat .naslov i{
+    font-size: 45px;
+    color: #ff6b00;
+}
+
+.citat .naslov h1{
+    font-size: 55px;
+    font-style: italic;
+}
+
+.citat .autor{
+    color: #e65100;
+    margin-left: 30%;
+}
+
+/* AUTOR */
+
+.index{
+    text-align: center;
+    text-transform: uppercase;
+    color: #e65100;
+    margin-top: 45px;
+}
+
+.autor{
+    display: flex;
+    align-items: center;
+    margin-top: 75px;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+.autor img{
+    height: 600px;
+    border: 1px solid #e65100;
+    margin-left: 170px;
+    border-radius: 25pc;
+}
+
+.autor .o-meni{
+    width: 30%;
+    color: white;
+    margin-left: 40px;
+}
+
+.autor .o-meni h1{
+    font-size: 55px;
+}
+
+.autor .o-meni p{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
